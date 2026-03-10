@@ -39,7 +39,7 @@ def generate_answer(prompt):
 
 # ----------- STARTUP LOGIC --------------
 
-folder_path = "documents"
+folder_path = "data"
 chunks = load_pdfs_from_folder(folder_path)
 index, chunks = create_add_load(chunks)
 
@@ -117,6 +117,7 @@ def add_knowledge(request: AddRequest):
     index, chunks = add_to_index(index, new_chunks, chunks)
 
     return {"message": "Knowledge added successfully"}
+
 
 
 
