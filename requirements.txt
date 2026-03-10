@@ -4,3 +4,6 @@ sentence-transformers
 requests
 numpy
 pandas
+fastapi
+uvicorn
+pypdf
